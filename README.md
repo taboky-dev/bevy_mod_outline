@@ -1,6 +1,9 @@
+> This is a fork of [komadori/bevy_mod_outline](https://github.com/komadori/bevy_mod_outline). It is compatible with
+> Bevy 0.18.
+
 # bevy_mod_outline
 
-[![crates.io](https://img.shields.io/crates/v/bevy_mod_outline.svg)](https://crates.io/crates/bevy_mod_outline)
+[//]: # ([![crates.io]&#40;https://img.shields.io/crates/v/bevy_mod_outline.svg&#41;]&#40;https://crates.io/crates/bevy_mod_outline&#41;)
 [![docs](https://docs.rs/bevy_mod_outline/badge.svg)](https://docs.rs/bevy_mod_outline)
 
 ![Screenshot of bevy_mod_outline's shapes example](https://github.com/bevyengine/bevy-assets/blob/main/Assets/3D/bevy_mod_outline.png?raw=true)
@@ -12,7 +15,7 @@ vertex extrusion and jump flood methods.
 
 ```toml
 [dependencies]
-bevy_mod_outline = "0.11"
+bevy_mod_outline = { git = "https://github.com/taboky-dev/bevy_mod_outline", branch = "master" }
 ```
 
 ## Examples
@@ -96,6 +99,7 @@ cargo run --example picking
 
 | This Version | Bevy version |
 |--------------|--------------|
+| 0.12.x       | 0.18.x       |
 | 0.11.x       | 0.17.x       |
 | 0.10.x       | 0.16.x       |
 | 0.9.x        | 0.15.x       |
@@ -112,7 +116,7 @@ cargo run --example picking
 
 - `flood` _(default)_ Enable support for the jump flood algorithm.
 - `interpolation` _(default)_ - Define `Lerp` trait impls using the
-`interpolation` crate.
+  `interpolation` crate.
 - `reflect` _(default)_ Define `Reflect` trait impls for the components.
 - `scene` _(default)_ Enable the `AsyncSceneInheritOutline` component.
 
